@@ -1,4 +1,4 @@
-/*Style für Headline im Website-Header*/
+﻿/*Style für Headline im Website-Header*/
 p {
     margin-top: 30px;
     margin-left: 160px;
@@ -10,6 +10,8 @@ p {
 #header {
 
 }
+
+
 /*Style für Subheadline im Website-Header*/
 #subheadline {
     postion:absolute;

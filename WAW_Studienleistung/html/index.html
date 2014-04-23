@@ -1,7 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html xmlns="http://www.w3.org/1999/html">
-<meta charset=utf-8>
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
 <head>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_anmeldung.css">
+    <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
     <title>Anmeldung</title>
 </head>
 <body>
@@ -12,17 +13,16 @@
 </p>
 
 <p><span id="infos">Messeinfos</span><br>
-    <span id="subinfos">Bitte auf eine der Messen eurer Wahl klicken um weitere Infos zu bekommen</span></p>
+    <span id="subinfos">Bitte auf eine der Messen eurer Wahl klicken um weitere Infos zu bekommen</span></p><br>
 
 <div id="hyperlinks">
-    <a href="cebit_index.html"><img id="cebit_logo"src="img/logos_100_100px/cebit.jpg"></a><br>
-    <a href="conhit_index.html"><img id="conhit_logo" src="img/logos_100_100px/conhit.jpg"></a><br>
-    <a href="webtech_index.html"><img id="webtech_logo" src="img/logos_100_100px/webtech.jpg"></a>
+    <a href="cebit_index.html"><img id="cebit_logo"src="img/logos_100_100px/cebit.jpg" alt="cebit"></a><br>
+    <a href="conhit_index.html"><img id="conhit_logo" src="img/logos_100_100px/conhit.jpg" alt="conhit"></a><br>
+    <a href="webtech_index.html"><img id="webtech_logo" src="img/logos_100_100px/webtech.jpg" alt="webtech"></a>
 </div>
 
 <!--Formular für Anmeldung zu einer Messe-->
 <form action="http.www.martinakraus.net/hsmannheim.php" method="get">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet_anmeldung.css">
     <fieldset id="eingabefelder">
         <legend id="anmeldedaten">Anmeldedaten</legend>
 
@@ -48,7 +48,7 @@
 
         <!--Dropdown-Menü "Studiengang" Default auf IB-->
         <label for="studigang"> Studiengang:</label>
-        <select name="studiengang" id="studigang" size="1"/>
+        <select name="studiengang" id="studigang" size="1">
         <option value="IB" selected="selected"> IB</option>
         <option value="UIB"> UIB</option>
         <option value="IMB"> IMB</option>
