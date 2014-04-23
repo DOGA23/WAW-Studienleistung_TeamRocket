@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html xmlns="http://www.w3.org/1999/html">
+<meta charset=utf-8>
+<head>
+    <title>Anmeldung</title>
+</head>
+<body>
+
+<!--Header der Webseite-->
+<p>Anmeldung <span id="gruppe">Team Rocket</span><br>
+    <span id="subheadline">Hier könnt ihr euch für eine Messe eurer Wahl anmelden</span>
+</p>
+
+<p><span id="infos">Messeinfos</span><br>
+    <span id="subinfos">Bitte auf eine der Messen eurer Wahl klicken um weitere Infos zu bekommen</span></p>
+
+<div id="hyperlinks">
+    <a href="cebit_index.html"><img id="cebit_logo"src="img/logos_100_100px/cebit.jpg"></a><br>
+    <a href="conhit_index.html"><img id="conhit_logo" src="img/logos_100_100px/conhit.jpg"></a><br>
+    <a href="webtech_index.html"><img id="webtech_logo" src="img/logos_100_100px/webtech.jpg"></a>
+</div>
+
+<!--Formular für Anmeldung zu einer Messe-->
+<form action="http.www.martinakraus.net/hsmannheim.php" method="get">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_anmeldung.css">
+    <fieldset id="eingabefelder">
+        <legend id="anmeldedaten">Anmeldedaten</legend>
+
+        <!--Eingebafeld "Vorname"-->
+        <label for="vorname"> Vorname:</label>
+        <input type="text" id="vorname" size="20" maxlength="30"> <br>
+
+        <!--Eingebafeld "Nachname"-->
+        <label for="name"> Nachname:</label>
+        <input type="text" id="name" size="20" maxlength="30"> <br>
+
+        <!--Eingebafeld "E-Mail Adresse"-->
+        <label for="email"> E-Mail:</label>
+        <input type="text" id="email" size="20" maxlength="30"> <br>
+
+        <!--Eingebafeld "Martrikelnummer"-->
+        <label for="matrikelnr"> Matrikelnummer:</label>
+        <input type="text" id="matrikelnr" size="20" maxlength="9"> <br>
+
+        <!--Eingebafeld "Handynummer"-->
+        <label for="handy"> Handynummer:</label>
+        <input type="text" id="handy" size="20" maxlength="20"> <br>
+
+        <!--Dropdown-Menü "Studiengang" Default auf IB-->
+        <label for="studigang"> Studiengang:</label>
+        <select name="studiengang" id="studigang" size="1"/>
+        <option value="IB" selected="selected"> IB</option>
+        <option value="UIB"> UIB</option>
+        <option value="IMB"> IMB</option>
+        </select>
+
+        <!--Radio-Buttons "Messe" zum auswählen der gewünschten Messe Default auf CeBIT-->
+        <div id="radios">
+            <label for="radios">Messe:</label>
+            <input type="radio" id="cebit" name="messe" value="CeBIT" checked="checked"> CeBIT <br>
+
+            <input type="radio" id="conhit" name="messe" value="ConHit"> ConHit <br>
+
+            <input type="radio" id="webtechcon" name="messe" value="WebTechCon"> WebTechCon <br>
+        </div>
+
+        <!--Button "Anmelden" übermittelt das ausgefüllte Formular an den Server-->
+        <button id="button" type="submit" name="anmelden" value="anmeldung">
+            Anmelden
+        </button>
+
+    </fieldset>
+
+
+</form>
+
+</body>
+
+</html>

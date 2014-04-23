@@ -1,0 +1,133 @@
+/*Style für Headline im Website-Header*/
+p {
+    margin-top: 30px;
+    margin-left: 160px;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#header {
+
+}
+/*Style für Subheadline im Website-Header*/
+#subheadline {
+    postion:absolute;
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*Gruppenname*/
+#gruppe {
+    margin-left: 760px;
+}
+
+/*Styles für Content-Bereich der Website*/
+body {
+    background-color: rgb(153, 217, 234);
+    font-family: HelveArial Black;
+    font-weight: bold;
+}
+
+#hyperlinks {
+    font-family: Arial Black;
+    font-weight: bold;
+}
+#hyperlinks {
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 60px;
+    margin-right: 10px;
+}
+
+#infos {
+    position: absolute;
+    margin-left: 490px;
+    margin-top: 47px;
+    font-family: Arial Black;
+    font-weght: bold;
+    font-size: 14px;
+}
+
+#subinfos {
+    position: absolute;
+    margin-top: 39px;
+    margin-left:490px;
+    font-size: 12px;
+}
+
+#eingabefelder {
+    margin-left: 160px;
+    padding-left: 25px;
+    border-width: 1px;
+    border-color: white;
+    width: 300px;
+    font-family: Arial Black;
+    font-size: 12px;
+
+}
+
+/*Styles für das Formular*/
+#anmeldedaten {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/*Styles von Eingabefelder-Beschreibung*/
+#form {
+    font-size: 12px;
+}
+
+/*EINGABEFELDER*/
+/*Für Eingabefelder zum Anordnen in einer Linie von links*/
+#vorname {
+    margin-top: 20px;
+    margin-left: 64px;
+}
+
+#name {
+    margin-top: 20px;
+    margin-left: 52px;
+}
+
+#email {
+    margin-top: 20px;
+    margin-left: 82px;
+}
+
+#matrikelnr {
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+#handy {
+    margin-top: 20px;
+    margin-left: 28px;
+}
+
+/*Dropdown-Menü Studiengang*/
+#studigang {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+/*Radio-Buttons Messe*/
+#cebit {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+#conhit {
+    margin-left: 129px;
+}
+
+#webtechcon {
+    margin-left: 129px;
+}
+
+/*Abstand Anmeldungs-Button von Formular-Elementen*/
+#button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

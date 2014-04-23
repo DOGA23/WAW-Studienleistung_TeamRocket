@@ -1,0 +1,20 @@
+body{	background-color: rgb(153,217,234);
+    font-family: Arial Black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px;
+
+}
+h1{	text-align: center;
+    font-size: 22px;}
+
+#img1 {
+    float: right;
+    width: 700px;
+    height: 400px;
+}
+#img2 {
+    float: left;
+    width: 700px;
+    height: 400px;
+}
