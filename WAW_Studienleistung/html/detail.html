@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC"-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Anmeldungsdetails</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="javascript/detail.js"></script>
+    <link rel="stylesheet" href="css/detail.css" type="text/css">
+</head>
+<body>
+<h1>Details zur Anmeldung</h1>
+
+<div id="messeInfos">
+    <table border="1" align="center">
+        <tr>
+            <th id="kosten" onclick="kostenTab()" width="300px">
+                Kosten der Messe
+            </th>
+            <th id="teilnehmer" onclick="teilnehmerTab()" width="300px">
+                Teilnehmer
+            </th>
+        </tr>
+    </table>
+</div>
+
+<div id="messeAuswahlTable">
+    <table border="1" align="center">
+        <tr>
+            <th id="cebitTab" onclick="cebitTable()" width="199px">Cebit</th>
+            <th id="conhitTab" onclick="conhitTable()" width="199px">ConhIT</th>
+            <th id="webtechTab" onclick="webtechTable()" width="199px">WebTechCon</th>
+        </tr>
+    </table>
+</div>
+
+<div id="tableMessekosten">
+    <script type=text/javascript">
+    </script>
+</div>
+<div id="messeTables">
+    <div id="tableCebit">
+        <script type="text/javascript">
+            teilnehmerCebit()
+        </script>
+    </div>
+
+    <div id="tableConhit">
+        <script type="text/javascript">
+            teilnehmerConhit()
+        </script>
+    </div>
+
+    <div id="tableWebtechcon">
+        <script type="text/javascript">
+            teilnehmerWebtech()
+        </script>
+    </div>
+</div>
+
+<p>
+    <button type="button" name="toMainPage" onclick="location='index.html'">Zur Hauptseite</button>
+</p>
+
+</body>
+
+</html>

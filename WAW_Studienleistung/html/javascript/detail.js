@@ -90,10 +90,12 @@ function teilnehmerCebit() {
 
 /*Funktion zum Ausgeben der Teilnehmer an der ConHIT*/
 function teilnehmerConhit() {
-    document.write('<table class="messeTables" border="1"');
-
-    for (var i = 0; i <= conhitTeilnehmer.conhit.length; i++) {
-        document.write(' <tr><td>' + conhitTeilnehmer.conhit[i].name + '</td><td>' + conhitTeilnehmer.conhit[i].vorname + '</td></tr>');
+    document.write('<table class="messeTables" border="1" width="100%"');
+    document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>E-Mail</th></tr>');
+    for (var i = 0; i < conhitTeilnehmer.conhit.length; i++) {
+        document.write(' <tr><td>' + conhitTeilnehmer.conhit[i].name + '</td><td>' +
+            conhitTeilnehmer.conhit[i].vorname +'</td><td>' + conhitTeilnehmer.conhit[i].studiengang + '</td><td>' +
+                conhitTeilnehmer.conhit[i].mail + '</td></tr>');
     }
     document.write('</table>');
 }
@@ -101,10 +103,12 @@ function teilnehmerConhit() {
 
 /*Funktion zum Ausgeben der Teilnehmer an der WebTech*/
 function teilnehmerWebtech() {
-    document.write('<table class="messeTables" border="1"');
-
-    for (var i = 0; i <= webtechTeilnehmer.webtech.length; i++) {
-        document.write(' <tr><td>' + webtechTeilnehmer.webtech[i].name + '</td><td>' + webtechTeilnehmer.webtech[i].vorname + '</td></tr>');
+    document.write('<table class="messeTables" border="1" width="100%"');
+    document.write(' <tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>E-Mail</th></tr>');
+    for (var i = 0; i < webtechTeilnehmer.webtech.length; i++) {
+        document.write(' <tr><td>' + webtechTeilnehmer.webtech[i].name + '</td><td>' +
+            webtechTeilnehmer.webtech[i].vorname +'</td><td>' + webtechTeilnehmer.webtech[i].studiengang + '</td><td>' +
+                webtechTeilnehmer.webtech[i].mail + '</td></tr>');
     }
     document.write('</table>');
 }
