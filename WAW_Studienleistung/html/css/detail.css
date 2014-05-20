@@ -23,16 +23,24 @@ body{
     background-color: deepskyblue;
 }
 
+<<<<<<< HEAD
 #messeTables{
     position: relative;
+=======
+.messeTables{
+    position: absolute;
+>>>>>>> 690ba10d13ff1ca1c1198a8c607e15ebd98f7655
     visibility: hidden;
     width: 600px;
 }
 
+<<<<<<< HEAD
 .test {
     text-align: center;
     color: black;
 }
+=======
+>>>>>>> 690ba10d13ff1ca1c1198a8c607e15ebd98f7655
 
 
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
  * Created by DO on 20.05.14.
  */
@@ -8,6 +9,8 @@
 /*------------------------------------------------------------------------*/
 
 /*Funktion zum Aufrufen der Teilnehmertabelle*/
+=======
+>>>>>>> 690ba10d13ff1ca1c1198a8c607e15ebd98f7655
 function teilnehmerTab(){
     document.getElementById("kosten").style.backgroundColor="transparent";
     document.getElementById("kosten").style.color="black";
@@ -72,6 +75,7 @@ function webtechTable(){
     document.getElementById("tableCebit").style.backgroundColor="transparent";
     document.getElementById("tabelleMessekosten").style.visibility="hidden";
 
+<<<<<<< HEAD
 }
 
 /*Funktion zum Ausgeben der Teilnehmer an der CeBit*/
@@ -187,3 +191,6 @@ var webtechTeilnehmer = { "webtech" : [
 
 
 
+=======
+}
+>>>>>>> 690ba10d13ff1ca1c1198a8c607e15ebd98f7655
