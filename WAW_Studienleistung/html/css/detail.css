@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(153,217,234);
+    font-family: Arial Black;
+    font-weight: bold;
+    text-align: center;
+}
+#kosten{
+    color: whitesmoke;
+    background-color: blue;
+}
+
+#messeInfos{
+    margin-top: 50px;
+}
+
+#messeAuswahlTable{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    visibility: hidden;
+}
+
+#cebitTab{
+    background-color: deepskyblue;
+}
+
+#messeTables{
+    position: relative;
+    visibility: hidden;
+    width: 600px;
+}
+
+.test {
+    text-align: center;
+    color: black;
+}
+
+
+
+
+
+
