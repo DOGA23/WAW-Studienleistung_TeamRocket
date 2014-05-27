@@ -1,0 +1,62 @@
+/*-----------------------------------------------*/
+/* Stylesheet fuer Detailseite detail.html*/
+/*-----------------------------------------------*/
+h1 {
+    font-family: Arial Black;
+    text-align: center;
+    position: relative;
+}
+
+body{
+    background-color: rgb(153,217,234);
+    font-family: Arial Black;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+
+/*-----------------------------------------------*/
+/*Style fuer Menue-Header*/
+#messekosten {
+    text-align: center;
+    position: relative;
+    table-align: center;
+}
+
+#teilnehmer {
+    font-family: Arial Black;
+    text-align: center;
+    table-layout: fixed;
+}
+
+/*-----------------------------------------------*/
+/*Style fuer Menue-Subheader*/
+#subheader {
+    visibility: hidden;
+}
+
+#cebitTab {
+    font-family: Arial Black;
+    font-size: 12px;
+    text-align: center;
+}
+
+#conhitTab {
+    font-family: Arial Black;
+    font-size: 12px;
+    text-align: center;
+}
+
+#webtechTab {
+    font-family: Arial Black;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+#messekosten {
+    border: 1px;
+    table-align: center;
+}

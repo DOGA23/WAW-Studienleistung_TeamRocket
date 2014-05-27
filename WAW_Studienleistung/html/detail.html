@@ -4,84 +4,84 @@
 <head>
     <title>Details zur Anmeldung</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" language="JavaScript" src="js/detail.js"></script>
-    <link rel="stylesheet" href="css/detail.css" type="text/css">
+    <script type="text/javascript" language="JavaScript" src="lib/js/detail.js"></script>
+    <link rel="stylesheet" href="lib/css/detail.css" type="text/css">
 
 </head>
 
 <!-- Beim Laden der Seite ist der "Kosten der Messe" Tab ausgewählt,
      daher wird direkt die Kostentabelle erzeugt-->
-<body onload="genKostenTabelle()">
+<body onload="kostenTabelle()">
 
-    <h1>Details zur Anmeldung</h1>
-    <!-- Auswahlmenue zwischen Messekosten und Teilnehmer der Messe -->
-    <div id="header">
-        <table border="1" align="center">
-            <tr>
-                <td id="messekosten" onclick="kostenTabelle">
-                    Kosten der Messe
-                </td>
+<h1>Details zur Anmeldung</h1>
+<!-- Auswahlmenue zwischen Messekosten und Teilnehmer der Messe -->
+<div id="header">
+    <table border="1" align="center">
+        <tr>
+            <td id="messekosten" onclick="kostenTabelle()" width="300px">
+                Kosten der Messe
+            </td>
 
-                <td id="teilnehmer" onclick="teilnehmerTabelle">
-                    Teilnehmer
-                </td>
+            <td id="teilnehmer" onclick="teilnehmerTabelle()" width="300px">
+                Teilnehmer
+            </td>
 
-            </tr>
-        </table>
-    </div>
+        </tr>
+    </table>
+</div>
 
-    <!-- Auswahl der Messe, deren Besucher man angezeigt haben will-->
-    <div id="subheader">
-        <table border="1" align="center">
-            <tr>
-                <td id="cebitTab" onclick="cebitTabelle">
-                    Cebit
-                </td>
+<!-- Auswahl der Messe, deren Besucher man angezeigt haben will-->
+<div id="subheader">
+    <table border="1" align="center">
+        <tr>
+            <td id="cebitTab" onclick="cebitTabelle()"width="199px">
+                Cebit
+            </td>
 
-                <td id="conhitTab" onclick="conhitTabelle">
-                    ConhIT
-                </td>
+            <td id="conhitTab" onclick="conhitTabelle()" width="198px">
+                ConhIT
+            </td>
 
-                <td id="webtechTab" onclick="webtechTabelle">
-                    WebTechCon
-                </td>
+            <td id="webtechTab" onclick="webtechTabelle()" width="199px">
+                WebTechCon
+            </td>
 
-            </tr>
-        </table>
-    </div>
+        </tr>
+    </table>
+</div>
 
-    <!-- Hier wird die Tabelle erzeugt, welche die Kosten für die verschiedenen Messen anzeigt -->
-    <div id="kosten">
+<!-- Hier wird die Tabelle erzeugt, welche die Kosten für die verschiedenen Messen anzeigt -->
+<div id="kosten">
+    <script type="text/javascript">
+        genKostenTabelle();
+    </script>
+</div>
+
+<!-- Hier werden die Tabellen erzeugt, welche die Besucher der jeweiligen Messe anzeigen -->
+<div id="messetabellen" align="center">
+
+    <div id="teilnehmerCebit">
         <script type="text/javascript">
-            genKostenTabelle();
+            genCebitTabelle()
         </script>
     </div>
 
-    <!-- Hier werden die Tabellen erzeugt, welche die Besucher der jeweiligen Messe anzeigen -->
-    <div id="messetabellen">
-
-            <div id="teilnehmerCebit">
-                <script type="text/javascript">
-                    genCebitTabelle();
-                </script>
-            </div>
-
-            <div id="teilnehmerConhit">
-                <script type="text/javascript">
-                    genConhitTabelle();
-                </script>
-            </div>
-
-            <div id="teilnehmerWebtech">
-                <script type="text/javascript">
-                    genWebtechTabelle();
-                </script>
-            </div>
+    <div id="teilnehmerConhit">
+        <script type="text/javascript">
+            genConhitTabelle()
+        </script>
     </div>
 
-    <p>
-        <button type="button" name="zurHauptseite" onclick="location='index.html'">Zur Hauptseite</button>
-    </p>
+    <div id="teilnehmerWebtech">
+        <script type="text/javascript">
+            genWebtechTabelle()
+        </script>
+    </div>
+</div>
+
+<p>
+    <button type="button" name="zurHauptseite" onclick="location='index.html'">Zur Hauptseite</button>
+</p>
 
 </body>
 </html>
