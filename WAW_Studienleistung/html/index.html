@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 
 <head>
+    <script type="text/javascript" language="JavaScript" src="lib/js/index.js"></script>
     <link rel="stylesheet" type="text/css" href="lib/css/stylesheet_anmeldung.css">
     <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
     <title>Anmeldung</title>
@@ -18,34 +19,34 @@
 <div id="hyperlinks">
     <a href="cebit_index.html"><img id="cebit_logo"src="lib/img/logos_100_100px/cebit.jpg" alt="cebit"></a><br>
     <a href="conhit_index.html"><img id="conhit_logo" src="lib/img/logos_100_100px/conhit.jpg" alt="conhit"></a><br>
-    <a href="webtech_index.html"><img id="webtech_logo" src="lib/img/logos_100_100px/webtech.jpg" alt="webtech"></a><br>
+    <a href="WebTechCon.html"><img id="webtech_logo" src="lib/img/logos_100_100px/webtech.jpg" alt="webtech"></a><br>
     <a href="detail.html">Details zur Anmeldung</a>
 </div>
 
 <!--Formular für Anmeldung zu einer Messe-->
-<form action="http://martinakraus.net/hsmannheim.php" method="GET" accept-charset="UTF-8">
+<form action="http://martinakraus.net/hsmannheim.php" id="form" method="GET" onsubmit="return formularUeberpruefen('form')">
     <fieldset id="eingabefelder">
         <legend id="anmeldedaten">Anmeldedaten</legend>
 
         <!--Eingebafeld "Vorname"-->
         <label for="vorname"> Vorname:</label>
-        <input type="text" id="vorname" size="20" maxlength="30"> <br>
+        <input type="text" id="vorname" size="20" maxlength="30" onfocus="faerben('vorname')"> <br>
 
         <!--Eingebafeld "Nachname"-->
         <label for="name"> Nachname:</label>
-        <input type="text" id="name" size="20" maxlength="30"> <br>
+        <input type="text" id="name" size="20" maxlength="30" onfocus="faerben('name')"> <br>
 
         <!--Eingebafeld "E-Mail Adresse"-->
         <label for="email"> E-Mail:</label>
-        <input type="text" id="email" size="20" maxlength="30"> <br>
+        <input type="text" id="email" size="20" maxlength="30" onfocus="faerben('email')"> <br>
 
         <!--Eingebafeld "Martrikelnummer"-->
         <label for="matrikelnr"> Matrikelnummer:</label>
-        <input type="text" id="matrikelnr" size="20" maxlength="9"> <br>
+        <input type="text" id="matrikelnr" size="20" maxlength="9" onfocus="faerben('matrikelnr')"> <br>
 
         <!--Eingebafeld "Handynummer"-->
         <label for="handy"> Handynummer:</label>
-        <input type="text" id="handy" size="20" maxlength="20"> <br>
+        <input type="text" id="handy" size="20" maxlength="20" onfocus="faerben('handy')"> <br>
 
         <!--Dropdown-Menü "Studiengang" Default auf IB-->
         <label for="studigang"> Studiengang:</label>
@@ -66,7 +67,7 @@
         </div>
 
         <!--Button "Anmelden" übermittelt das ausgefüllte Formular an den Server-->
-        <input id="button" type="submit" name="anmelden" value="Anmeldung"/>
+        <input type="submit" name="anmelden" value="Anmeldung"/>
 
 
     </fieldset>
