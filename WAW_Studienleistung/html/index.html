@@ -2,79 +2,89 @@
 
 <head>
     <script type="text/javascript" language="JavaScript" src="lib/js/index.js"></script>
-    <link rel="stylesheet" type="text/css" href="lib/css/stylesheet_anmeldung.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/index.css">
     <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
     <title>Anmeldung</title>
 </head>
 <body>
 
-<!--Header der Webseite-->
-<p>Anmeldung <span id="gruppe">Team Rocket</span><br>
-    <span id="subheadline">Hier könnt ihr euch für eine Messe eurer Wahl anmelden</span>
-</p>
-
-<p><span id="infos">Messeinfos</span><br>
-    <span id="subinfos">Bitte auf eine der Messen eurer Wahl klicken um weitere Infos zu bekommen</span></p><br>
-
-<div id="hyperlinks">
-    <a href="cebit_index.html"><img id="cebit_logo"src="lib/img/logos_100_100px/cebit.jpg" alt="cebit"></a><br>
-    <a href="conhit_index.html"><img id="conhit_logo" src="lib/img/logos_100_100px/conhit.jpg" alt="conhit"></a><br>
-    <a href="WebTechCon.html"><img id="webtech_logo" src="lib/img/logos_100_100px/webtech.jpg" alt="webtech"></a><br>
-    <a href="detail.html">Details zur Anmeldung</a>
-</div>
-
+<h3>Anmeldung:
+    <br/>
+    <span>Hier könnt ihr euch für eine Messe eurer Wahl anmelden. </span>
+</h3>
+<img src="lib/img/TeamRocket.jpg" alt="Platzhalter für Logo"/>
+<br/>
+<br/>
 <!--Formular für Anmeldung zu einer Messe-->
 <form action="http://martinakraus.net/hsmannheim.php" id="form" method="GET" onsubmit="return formularUeberpruefen('form')">
     <fieldset id="eingabefelder">
         <legend id="anmeldedaten">Anmeldedaten</legend>
 
         <!--Eingebafeld "Vorname"-->
+        <p>
         <label for="vorname"> Vorname:</label>
-        <input type="text" id="vorname" size="20" maxlength="30" onfocus="faerben('vorname')"> <br>
-
+        <input type="text" id="vorname" size="20" name="vorname" onfocus="faerben('vorname');"> <br>
+        </p>
         <!--Eingebafeld "Nachname"-->
-        <label for="name"> Nachname:</label>
-        <input type="text" id="name" size="20" maxlength="30" onfocus="faerben('name')"> <br>
-
+        <p>
+        <label for="nachname"> Nachname:</label>
+        <input type="text" id="nachname" size="20" name="nachname" onfocus="faerben('nachname');"> <br>
+        </p>
         <!--Eingebafeld "E-Mail Adresse"-->
+        <p>
         <label for="email"> E-Mail:</label>
-        <input type="text" id="email" size="20" maxlength="30" onfocus="faerben('email')"> <br>
-
+        <input type="text" id="email" size="20" name="email"  onfocus="faerben('email');"> <br>
+        </p>
         <!--Eingebafeld "Martrikelnummer"-->
+        <p>
         <label for="matrikelnr"> Matrikelnummer:</label>
-        <input type="text" id="matrikelnr" size="20" maxlength="9" onfocus="faerben('matrikelnr')"> <br>
-
+        <input type="text" id="matrikelnr" size="20" name="matrikelnr" onfocus="faerben('matrikelnr');"> <br>
+        </p>
         <!--Eingebafeld "Handynummer"-->
+        <p>
         <label for="handy"> Handynummer:</label>
-        <input type="text" id="handy" size="20" maxlength="20" onfocus="faerben('handy')"> <br>
+        <input type="text" id="handy" size="20" name="handy" onfocus="faerben('handy');"> <br>
+        </p>
+        <div id="studiengangdiv">
+            Studiengang:
+			<span>
+			<select id="sg" name="studiengang">
+                <option value="uib"> UIB </option>
+                <option value="ib" selected="selected"> IB </option>
+                <option value="imb"> IMB </option>
+            </select>
+			</span>
+        </div>
+        <br/>
+        <div id="messediv">
+            Messe:
 
-        <!--Dropdown-Menü "Studiengang" Default auf IB-->
-        <label for="studigang"> Studiengang:</label>
-        <select name="studiengang" id="studigang" size="1">
-            <option value="IB" selected="selected"> IB</option>
-            <option value="UIB"> UIB</option>
-            <option value="IMB"> IMB</option>
-        </select>
-
-        <!--Radio-Buttons "Messe" zum auswählen der gewünschten Messe Default auf CeBIT-->
-        <div id="radios">
-            <label for="radios">Messe:</label>
-            <input type="radio" id="cebit" name="messe" value="CeBIT" checked="checked"> CeBIT <br>
-
-            <input type="radio" id="conhit" name="messe" value="ConHit"> ConHit <br>
-
-            <input type="radio" id="webtechcon" name="messe" value="WebTechCon"> WebTechCon <br>
+            <span><input type="radio" name="messe" value="cebit" checked="checked">CeBIT<br></span>
+            <div>
+                <span><input type="radio" name="messe" value="conhit">ConhIT<br></span>
+                <span><input type="radio" name="messe" value="webtech con">WebTech Con<br></span>
+            </div>
         </div>
 
-        <!--Button "Anmelden" übermittelt das ausgefüllte Formular an den Server-->
-        <input type="submit" name="anmelden" value="Anmeldung"/>
 
+        <span><input type="submit" value="Anmelden" name="Submit"></span>
 
     </fieldset>
 
-
+    <div id="messeinfos">
+        <p>Messe Infos:
+            <br/>
+            <Span>Klicken sie auf die Messe ihrer Wahl um weitere Informationen zu erhalten</span></p>
+        <br/>
+        <p><a href="cebit_index.html"> CeBIT </a></p>
+        <br/>
+        <p><a href="conhit_index.html"> ConhIT </a></p>
+        </br>
+        <p><a href="Webtechcon.html"> WebTech Con </a></p>
+        <br/>
+        <p><a href="detail.html"> Details zur Anmeldung</a></p>
+    </div>
 </form>
 
 </body>
-
 </html>

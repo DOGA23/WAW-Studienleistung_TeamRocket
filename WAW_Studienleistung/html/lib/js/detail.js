@@ -199,8 +199,8 @@ var teilnehmerWebtech = { "webtech" : [
 
 function genKostenTabelle() {
     // Generieren der Tabelle inklusive Ueberschriften
-    document.write('<table class = "messekosten" border="1" align="center" width="500px">');
-    document.write('<tr><th>Messe</th><th>Selbstkosten</th></tr>');
+    document.write('<table class="messetabellen" border="1" align="center" width="700px">');
+    document.write('<tr id="tr1"><th>Messe</th><th>Selbstkosten</th></tr>');
 
     // Generieren der Zelleninhalte
     for (var i = 0; i < messekosten.mkosten.length; i++) {
@@ -212,8 +212,8 @@ function genKostenTabelle() {
 
 function genCebitTabelle() {
     // Generieren der Tabelle inklusive Ueberschriften
-    document.write('<table class = "messetabellen" border="1"width="500px">');
-    document.write('<tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>E-Mail</th></tr>');
+    document.write('<table class="messetabellen" border="1" width="700px">');
+    document.write('<tr id="tr2"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>E-Mail</th></tr>');
 
     // Generieren der Zelleninhalte
     for (var i = 0; i < teilnehmerCebit.cebit.length; i++) {
@@ -228,8 +228,8 @@ function genCebitTabelle() {
 
 function genConhitTabelle() {
     // Generieren der Tabelle inklusive Ueberschriften
-    document.write('<table class = "messetabellen" border="1"width="500px">');
-    document.write('<tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>E-Mail</th></tr>');
+    document.write('<table class="messetabellen" border="1" width="700px">');
+    document.write('<tr id="tr3"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>E-Mail</th></tr>');
 
     // Generieren der Zelleninhalte
     for (var i = 0; i < teilnehmerConhit.conhit.length; i++) {
@@ -244,8 +244,8 @@ function genConhitTabelle() {
 
 function genWebtechTabelle() {
     // Generieren der Tabelle inklusive Ueberschriften
-    document.write('<table class = "messetabellen" border="1"width="500px">');
-    document.write('<tr><th>Name</th><th>Vorname</th><th>Studiengang</th><th>E-Mail</th></tr>');
+    document.write('<table class="messetabellen" border="1" width="700px">');
+    document.write('<tr id="tr4"><th>Name</th><th>Vorname</th><th>Studiengang</th><th>E-Mail</th></tr>');
 
     // Generieren der Zelleninhalte
     for (var i = 0; i < teilnehmerWebtech.webtech.length; i++) {

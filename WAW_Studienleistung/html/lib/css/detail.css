@@ -23,7 +23,7 @@ body{
     text-align: center;
     position: relative;
     table-align: center;
-}
+    }
 
 #teilnehmer {
     font-family: Arial Black;
@@ -59,4 +59,36 @@ body{
 #messekosten {
     border: 1px;
     table-align: center;
+}
+
+.messetabellen{
+    position: absolute;;
+    left: 680px;
+    text-align: center;
+    width: 500px;
+}
+
+
+#b1{
+    position: absolute;
+    bottom : 20px;
+}
+#cht{
+    left: 657px;
+}
+
+#tr1{
+    color: blue;
+}
+
+#tr2{
+    color: blue;
+}
+
+#tr3{
+    color: blue;
+}
+
+#tr4{
+    color: blue;
 }
