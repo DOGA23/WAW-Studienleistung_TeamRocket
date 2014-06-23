@@ -1,5 +1,5 @@
 <?php
-
+header('location:'.$_SERVER['HTTP_REFERER']);
 
 $vorname = $_GET["vorname"];
 $nachname = $_GET["nachname"];
@@ -33,4 +33,5 @@ if($_GET["messe"] == "webtechcon"){
 
     fclose($handle);
 }
+   
 ?>
