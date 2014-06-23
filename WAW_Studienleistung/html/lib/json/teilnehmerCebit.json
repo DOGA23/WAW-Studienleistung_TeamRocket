@@ -1,0 +1,31 @@
+// CeBit-Teilnehmer
+{ "cebit": [
+    {
+        "name": "Ent",
+        "vorname": "Thilo",
+        "studiengang": "IB",
+        "mail": "t.ent@gmail.de"
+    },
+
+    {
+        "name": "Kraus",
+        "vorname": "Martina",
+        "studiengang": "IB",
+        "mail": "m.Kraus@hs-mannheim.de"
+    },
+
+    {
+        "name": "Smits",
+        "vorname": "Thomas",
+        "studiengang": "UIB",
+        "mail": "t.smits@hs-mannheim.de"
+    },
+
+    {
+        "name": "Groeschel",
+        "vorname": "Michael",
+        "studiengang": "UIB",
+        "mail": "m.groeschel@hs-mannheim.de"
+    }
+]
+}

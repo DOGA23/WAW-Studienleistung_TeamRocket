@@ -106,6 +106,11 @@ function webtechTabelle() {
 /*-------------------------------------------------------------------------------------*/
 
 // Kosten der Messen
+var messekosten = JSON.parse(loadPage("/../WAW/Milestone 2/getDetails.php?dateiname=messekosten"));
+var teilnehmerCebit = JSON.parse(loadPage("/../WAW/Milestone 2/getDetails.php?dateiname=teilnehmerCebit"));
+var teilnehmerConhit = JSON.parse(loadPage("/../WAW/Milestone 2/getDetails.php?dateiname=teilnehmerConhit"));
+var teilnehmerWebtech = JSON.parse(loadPage("/../WAW/Milestone 2/getDetails.php?dateiname=teilnehmerWebtech"));
+
 var messekosten = { "mkosten" : [
     {
         "name": "CeBit",
@@ -122,6 +127,7 @@ var messekosten = { "mkosten" : [
         "preis": "300,00 EUR"
     }]
 };
+
 
 // CeBit-Teilnehmer
 var teilnehmerCebit = { "cebit" : [
@@ -224,6 +230,13 @@ function genCebitTabelle() {
     };
     document.write('</table>');
 };
+
+function loadPage(url){
+    var  xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", url, false);
+    xmlhttp.send();
+    return xmlhttp.responseText;
+}
 
 
 function genConhitTabelle() {

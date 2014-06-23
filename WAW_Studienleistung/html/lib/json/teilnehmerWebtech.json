@@ -1,0 +1,16 @@
+{ "webtech": [
+    {
+        "name": "Hoppe",
+        "vorname": "Johannes",
+        "studiengang": "UIB",
+        "mail": "j.hoppe@gmx.de"
+    },
+
+    {
+        "name": "Hofmeister",
+        "vorname": "Johannes",
+        "studiengang": "UIB",
+        "mail": "cessor@gmail.de"
+    }
+]
+}

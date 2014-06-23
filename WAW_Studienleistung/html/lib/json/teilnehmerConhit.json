@@ -1,0 +1,16 @@
+{ "conhit": [
+    {
+        "name": "Schmuecker",
+        "vorname": "Paul",
+        "studiengang": "IMB",
+        "mail": "p.schmuecker@hs-mannheim.de"
+    },
+
+    {
+        "name": "Felsenheimer",
+        "vorname": "Jan",
+        "studiengang": "IB",
+        "mail": "j.felsenheimerl@diebestebandderwelt.de"
+    }
+]
+}
